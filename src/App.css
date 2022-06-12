@@ -44,3 +44,16 @@ html {
         transform: rotate(360deg);
     }
 }
+
+@font-face {
+    font-family: 'JalnanOTF';
+    src: url('./fonts/JalnanOTF.otf');
+}
+@font-face {
+    font-family: 'SCDream7';
+    src: url('./fonts/SCDream7.otf');
+}
+@font-face {
+    font-family: 'SCDream6';
+    src: url('./fonts/SCDream6.otf');
+}
