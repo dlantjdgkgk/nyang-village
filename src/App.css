@@ -57,3 +57,10 @@ html {
     font-family: 'SCDream6';
     src: url('./fonts/SCDream6.otf');
 }
+
+@font-face {
+    font-family: 'SCDream8';
+    font-weight: 800;
+    src: url('./fonts/SCDream8.otf') format('otf'),
+        url('./fonts/SCDream8.otf') format('otf');
+}
