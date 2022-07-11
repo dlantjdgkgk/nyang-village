@@ -1,6 +1,6 @@
 import React from 'react';
 import useChat from './useHook';
-import { Navbar, Sidebar, ChatRoom, DIV } from './style';
+import { Navbar, Sidebar, ChatRoom, DIV, Chatting, SendText } from './style';
 import { AiOutlineMenu } from 'react-icons/ai';
 const Chat = () => {
     const { Logout } = useChat();
@@ -58,6 +58,35 @@ const Chat = () => {
                             <AiOutlineMenu />
                         </button>
                     </div>
+                    <Chatting>
+                        <div className='chatWrapper'>
+                            <div className='sendContents'>
+                                <div className='sendContent'>안녕하세요 .</div>
+                                <div className='sendContent'>
+                                    안녕하세요 반갑습니다 asdas 합니다.
+                                    안녕하세요 반갑습니다 asdas 합니다.
+                                </div>
+                                <div className='sendContent'>
+                                    안녕하세요 반갑습니다 asdas 합니다.
+                                    안녕하세요 반갑습니다 asdas 합니다.
+                                </div>
+                            </div>
+                            <div className='receiveContents'>
+                                <div className='receiveContent'>asdas</div>
+                                <div className='receiveContent'>asdas</div>
+                            </div>
+                        </div>
+                        <SendText>
+                            <form method='post'>
+                                <input
+                                    type='text'
+                                    // onChange={onChange}
+                                    // value={sendText}
+                                    placeholder=' 메세지를 입력해주세요'
+                                ></input>
+                            </form>
+                        </SendText>
+                    </Chatting>
                 </ChatRoom>
             </DIV>
         </>

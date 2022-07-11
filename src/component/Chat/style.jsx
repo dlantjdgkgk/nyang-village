@@ -27,7 +27,7 @@ export const DIV = styled.div`
 
 export const Sidebar = styled.div`
     width: 496px;
-    height: 800px;
+    height: 880px;
     border-right: 1px double #ffcf82;
     .welcomeProfile {
         display: flex;
@@ -95,11 +95,13 @@ export const Sidebar = styled.div`
 `;
 
 export const ChatRoom = styled.div`
+    display: flex;
+    flex-direction: column;
     .subjectName {
         display: flex;
         width: 1424px;
         height: 100px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #ffcf82;
         justify-content: space-between;
         align-items: center;
     }
@@ -125,5 +127,60 @@ export const ChatRoom = styled.div`
         background-color: white;
         margin-right: 20px;
         font-size: 24px;
+    }
+`;
+
+export const Chatting = styled.div`
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 95%;
+    background-color: white;
+    box-sizing: border-box;
+    .chatWrapper {
+        overflow-y: auto;
+        height: 600px;
+    }
+    .sendContents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+    .receiveContents {
+        display: inline-flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    // float 를 위한 속성
+    .sendContent {
+        margin-top: 20px;
+        background-color: #ff9601;
+        border-radius: 20px;
+        padding: 10px;
+        max-width: 150px;
+    }
+    .receiveContent {
+        margin-top: 20px;
+        background-color: #f5b556;
+        border-radius: 20px;
+        padding: 10px;
+        max-width: 150px;
+    }
+`;
+
+export const SendText = styled.div`
+    input {
+        position: fixed;
+        margin-top: 30px;
+        width: 70%;
+        height: 120px;
+        border: 2px solid #ff7301;
+        padding-left: 8px;
+        border-radius: 16px;
+    }
+    input::placeholder {
+        color: #ff8601;
+        font-family: 'SCDream6';
+        font-size: 12px;
     }
 `;

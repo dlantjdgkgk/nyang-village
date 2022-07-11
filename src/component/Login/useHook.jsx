@@ -8,7 +8,6 @@ const useLogin = () => {
         password: '',
     });
     const [cookies, setCookie] = useCookies([]);
-
     const { id, password } = inputs;
 
     const onChange = (e) => {
